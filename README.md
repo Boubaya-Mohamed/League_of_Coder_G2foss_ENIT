@@ -1,8 +1,5 @@
 # League_of_Coder_G2foss_ENIT
 
+“League Of Coders” une plateforme conçue pour l’organisation des tournois de programmation.
+Basée sur le compilateur Python 2.7, elle permet de vérifier la conformité des résultats d’exécution des codes par rapport à ceux configurés. Elle offre, en plus, la possibilité de trier les équipes compétitrices selon le nombre et la difficulté des problèmes résolus et la rapidité de résolution des problèmes par rapport aux autres équipes.
 
-Dans le cadre du club G2FOSS, nous avons organisé une compétition de programmation interne nommée " League of Coders " .
-Il s'agit d'une compétition en programmation (Python) . Le but de ce projet realiser une plateforme de
-compétitions qui permet d'accueillir les équipes participantes (élèves ingénieurs de l'ENIT), publier les tasks à résoudre,
-recevoir les réponses soumises et présenter le Dashboard de résultat en temps réel. Plusieurs types d’exercices peuvent être
-offerts : Math, cryptographie, String ,etc.
