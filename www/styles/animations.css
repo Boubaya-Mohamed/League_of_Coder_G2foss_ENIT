@@ -1,0 +1,14 @@
+.fade-move {
+    transition: transform 1s;
+}
+.fade-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: all 1s;
+}
+.fade-enter, .fade-leave-active {
+    opacity: 0;
+    transform: translateX(30px);
+}

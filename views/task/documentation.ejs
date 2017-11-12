@@ -1,0 +1,902 @@
+
+  <h1 class="page_title">
+    Documentation
+  </h1>
+  <div class="row profile">
+    <div class="sign_in_container challenge_panel profile_panel" style="padding-bottom: 20px; position: fixed; z-index: 555; top: 170px; width: 230px;">
+      <div class="documentation_header">
+        Menu
+      </div>
+      <ul class="documentation_list">
+        <a class="documentation_list_item" data-index="1." href="#io">Input/Output</a>
+        <a class="documentation_list_item" data-index="2." href="#variables">Variables</a>
+        <a class="documentation_list_item" data-index="3." href="#operators">Operators</a>
+        <a class="documentation_list_item" data-index="4." href="#Conditional_statement">Conditional statement</a>
+        <a class="documentation_list_item" data-index="5." href="#loops">Loops</a>
+        <a class="documentation_list_item" data-index="6." href="#collections">Collections</a>
+        <a class="documentation_list_item" data-index="7." href="#functions">Functions</a>
+        <a class="documentation_list_item" data-index="8." href="#strings">Strings</a>
+      </ul>
+    </div>
+
+    <div class="profile_details" style="margin-left: 260px;
+display: block;
+width: 100%;">
+      <nav class="navigation">
+        <a href="#" class="navigation_item">Documentation</a>
+        <a href="#" class="navigation_item">Input/Output</a>
+      </nav>
+      <div class="documentation"  id="io">
+        <h2 class="documentation_title">1. Input/Output</h2>
+        <div class="documentation_section">
+          <h3 class="documentation_section_title">Input/ raw_input()</h3>
+
+          <div class="documentation_subsection">
+            <h4 class="documentation_subsection_title">print</h4>
+
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">a = <span class="code_number">5</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">print ( a )</li>
+                <li class="documentation_code_content_item"><span class="code_number">5</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="documentation_subsection">
+            <h4 class="documentation_subsection_title">input()</h4>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">num = <span>input('Enter a number: ')</span></li>
+                <li class="documentation_code_content_item ">Enter a number: <span class="code_number">10</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">num</li>
+
+                <li class="documentation_code_content_item"><span class="code_number">10</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="documentation"  id="variables">
+        <h2 class="documentation_title">2. Calculs et variables</h2>
+
+        <div class="documentation_section">
+
+          <p class="documentation_section_content">Une variable est une sorte de <span class="documentation_highlight">boite virtuelle</span> dans laquelle on peut mettre une (ou plusieurs) donnée(s). L'idée est de stocker temporairement une donnée pour travailler avec. Pour votre machine une variable est une adresse qui indique l'emplacement de la mémoire vive où sont stockées les informations que nous avons liées avec.
+            <br/>
+            Affectons une valeur à la variable <span class="documentation_highlight">age</span> que nous allons ensuite afficher:
+          </p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">age = <span class="code_number">30</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">age</li>
+              <li class="documentation_code_content_item"><span class="code_number">30</span></li>
+            </ul>
+          </div>
+          <p class="documentation_section_content">
+            On va ensuite ajouter 10 à la valeur de cette variable:
+          </p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">age = <span class="code_number">30</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">age = age + <span class="code_number">10</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">age</li>
+              <li class="documentation_code_content_item"><span class="code_number">40</span></li>
+            </ul>
+          </div>
+          <p class="documentation_section_content">
+            Il est possible de mettre une variable dans une autre variable.
+          </p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">age = <span class="code_number">30</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">age2 = age</li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">age2</li>
+              <li class="documentation_code_content_item"><span class="code_number">30</span></li>
+            </ul>
+          </div>
+
+          <p class="documentation_section_content">
+            Vous pouvez mettre à peu près tout ce que vous voulez dans votre variable, y compris du texte:
+          </p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">age = <span class="code_string">"J'ai 30 ans"</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">age</li>
+              <li class="documentation_code_content_item"><span class="code_string">"J'ai 30 ans"</span></li>
+            </ul>
+          </div>
+
+
+          <p class="documentation_section_content">
+            Il est possible de concaténer, c'est à dire d'ajouter du texte à du texte:
+          </p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">age = age + <span class="code_string">" et je suis encore jeune!"</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">age</li>
+              <li class="documentation_code_content_item"><span class="code_string">"J'ai 30 ans et je suis encore jeune!"</span></li>
+            </ul>
+          </div>
+
+
+          <p class="documentation_section_content">
+            Vous pouvez même multiplier une chaine de caractères:
+          </p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">age = <span class="code_string">"jeune"</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">age = age * <span class="code_number">3</span></li>
+              <li class="documentation_code_content_item"><span class="code_string">'jeunejeunejeune'</span></li>
+            </ul>
+          </div>
+
+          <p class="documentation_section_content">
+            Evidemment, si vous essayez de faire des additions avec des variables qui sont des chiffres et d'autres qui sont du texte, l'interpréteur va vous gronder:
+          </p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">age = <span class="code_string">"J'ai 30 ans"</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">age</li>
+              <li class="documentation_code_content_item ">"J'ai 30 ans"</li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">age + <span class="code_number">1</span></li>
+              <li class="documentation_code_content_item">
+                Traceback (most recent call last):<br/>
+                File "&lt;stdin&gt;", line 1, in &lt;module&gt;<br/>
+                TypeError: cannot concatenate 'str' and 'int' objects
+              </li>
+            </ul>
+          </div>
+
+
+          <p class="documentation_section_content">
+            Vous remarquez que l'interpréteur est sympa puisqu'il vous dit ce qui ne va pas: Il ne peut pas concaténer str et int.
+          </p>
+
+        </div>
+        <div class="documentation_section">
+          <h3 class="documentation_section_title">Echapper les quotes</h3>
+          <p class="documentation_section_content">Comment inclure le caractère quote puisqu'il indique un début de données et en fin de données?</p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">texte = <span class="code_string">"Bonjour je m'appelle \"Olivier\""</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">texte</li>
+              <li class="documentation_code_content_item">Bonjour je m<span class="code_string">'appelle "Olivier"</span></li>
+            </ul>
+          </div>
+          <p class="documentation_section_content">
+            ou
+          </p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">texte = <span class="code_string">'Bonjour je m\'appelle "Olivier"'</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">texte</li>
+              <li class="documentation_code_content_item"><span class="code_string">'Bonjour je m\'appelle "Olivier"'</span></li>
+            </ul>
+          </div>
+          <p class="documentation_section_content">
+            Il existe une autre manière de stocker du texte dans une variable: l'utilisation d'un triple quote. Cela permet de ne pas échapper les caractères quotes des données
+          </p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">texte = <span class="code_string">"""</span></li>
+              <li class="documentation_code_content_item"><span class="code_string">... Bonjour je m'appelle "olivier"</span></li>
+              <li class="documentation_code_content_item"><span class="code_string">... """</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">texte</li>
+              <li class="documentation_code_content_item"><span class="code_string">'\nBonjour je m\'appelle "olivier"\n'</span></li>
+            </ul>
+          </div>
+
+
+
+        </div>
+        <div class="documentation_section">
+          <h3 class="documentation_section_title">Nommer une variable</h3>
+          <p class="documentation_section_content">Vous ne pouvez pas nommer les variables comme bon vous semble, puisqu'il existe déjà des mots utilisés par Python. Voici la liste des mots réservé par python:</p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item">print in and or if del for is raise assert elif from lambda return break else global not try class except while continue exec import pass yield def finally</li>
+            </ul>
+          </div>
+          <p class="documentation_section_content">
+            Pourquoi ces mots sont-ils réservés? Parce qu'ils servent à faire autre chose. Nous verrons quoi plus en détail dans les prochains chapitres.<br/>
+            Pour nommer une variable vous devez obligatoirement utiliser les lettres de l'alphabet, les chiffres et le caractère "_" et "-". N'utilisez pas les accents, ni les signe de ponctuation ou le signe @. De plus les chiffres ne doivent jamais se trouver en première position dans votre variable:
+          </p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_number">1</span>var = <span class="code_number">1</span></li>
+              File "&lt;stdin&gt;", line 1<br/>
+              1var = 1<br/>
+              SyntaxError: invalid syntax
+            </ul>
+          </div>
+          <p class="documentation_section_content">
+            Comme vous le remarquez, python refuse ce genre de syntaxe, mais il acceptera <span class="documentation_highlight">var1 = 1</span>.
+          </p>
+
+
+
+        </div>
+
+        <div class="documentation_section">
+          <h3 class="documentation_section_title">Les types de variables</h3>
+          <p class="documentation_section_content">
+            <span class="documentation_highlight">En python une variable est typée</span>, c'est à dire qu'en plus d'une valeur, une variable possède une sorte d'étiquette qui indique ce que contient cette boite virtuelle.</br>
+            Voici une liste de type de variable: </br>
+            Les integer ou nombres entiers: comme son nom l'indique un entier est un chiffre sans décimales.</br>
+            Les float ou nombre à virgules: exemple : 1.5</br>
+            Les strings ou chaine de caractères: pour faire simple tout ce qui n'est pas chiffre.</br>
+            Il en existe plein d'autres mais il est peut être encore un peu trop tôt pour vous en parler.</br>
+            Pour connaitre le type d'une variable, vous pouvez utiliser la fonction <span class="documentation_highlight">"type()" </span>
+
+          </p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">v = <span class="code_number">15</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_function">type</span>(v)</li>
+              &lt;<span class="code_function">type</span> 'int'&gt;<br/>
+            </ul>
+          </div>
+
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">v = <span class="code_string">"Olivier"</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_function">type</span>(v)</li>
+              &lt;<span class="code_function">type</span> 'str'&gt;<br/>
+            </ul>
+          </div>
+
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">v = <span class="code_number">3.2</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_function">type</span>(v)</li>
+              &lt;<span class="code_function">type</span> 'float'&gt;<br/>
+            </ul>
+          </div>
+
+
+
+
+        </div>
+
+
+      </div>
+      <div class="documentation"  id="operators">
+        <h2 class="documentation_title">3.Operateurs</h2>
+        <div class="documentation_section">
+
+          <p class="documentation_section_content">Une des premières fonctionnalités d'un interpréteur est de faire des calculs:</p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_number">1</span>+<span class="code_number">2</span></li>
+              <li class="documentation_code_content_item "><span class="code_number">3</span></li>
+            </ul>
+          </div>
+          <p class="documentation_section_content">Tous les opérateurs sont utilisables:</p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_number">1</span>-<span class="code_number">10</span></li>
+              <li class="documentation_code_content_item "><span class="code_number">-9</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_number">2</span>*<span class="code_number">10</span></li>
+              <li class="documentation_code_content_item "><span class="code_number">20</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_number">100</span>/<span class="code_number">4</span></li>
+              <li class="documentation_code_content_item "><span class="code_number">25</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_number">2</span>**<span class="code_number">3</span></li>
+              <li class="documentation_code_content_item "><span class="code_number">8</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_number">10</span>%<span class="code_number">4</span></li>
+              <li class="documentation_code_content_item "><span class="code_number">2</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_number">10</span>/<span class="code_number">3</span></li>
+              <li class="documentation_code_content_item "><span class="code_number">3</span></li>
+            </ul>
+          </div>
+          <p class="documentation_section_content">Suprise 10/3 = 3 . Alors quelle est donc cette folie? Python raisonne en nombres entiers puisque nous lui avons fourni deux nombres entiers. Pour avoir un résultat en décimales, il vous faudra utiliser cette syntaxe:</p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_number">10.0</span>/<span class="code_number">3</span></li>
+              <li class="documentation_code_content_item "><span class="code_number">3.3333333333333335</span></li>
+              <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_number">10</span>*<span class="code_number">3.0</span></li>
+              <li class="documentation_code_content_item "><span class="code_number">3.3333333333333335</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="documentation"  id="Conditional_statement">
+        <h2 class="documentation_title">4.Conditional_statement</h2>
+        <div class="documentation_section">
+
+          <p class="documentation_section_content">Cette notion est l'une des plus importante en programmation. L'idée est de dire que si telle variable a telle valeur alors faire cela sinon cela.
+
+            Prenon un exemple, on va donner une valeur à une variable et si cette valeur est supérieur à 5, alors on va incrémenter la valeur de 1</p>
+          <div class="documentation_subsection">
+
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">a =<span class='code_number'>10</span> </li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">if a > <span class="code_number">5</span>:</li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;<span >a=</span>a+<span class="code_number">1</span></li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;</li>
+
+                <li class="documentation_code_content_item documentation_code_content_item_input">a</li>
+                <li class="documentation_code_content_item"><span class="code_number">11</span></li>
+              </ul>
+            </div>
+
+
+          </div>
+          <div class="documentation_subsection">
+
+            <p class="documentation_subsection_content">Que se passe-t-il si la valeur était inférieure à 5? </p>
+
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">a = <span class="code_number">3</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">if a > <span class="code_number">5</span>:</li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;<span >a=</span>a+<span class="code_number">1</span></li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;</li>
+
+                <li class="documentation_code_content_item documentation_code_content_item_input">a</li>
+                <li class="documentation_code_content_item"><span class="code_number">3</span></li>
+              </ul>
+            </div>
+            On remarque que si la condition n'est pas remplie, les instructions dans la structure conditionnelle sont ignorées.
+            <h3 class="documentation_section_title">Condition if else</h3>
+            <p>Il est possible de donner des instructions quelque soit les choix possibles avec le mot clé else.</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">a = <span class="code_number">20</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">if a > <span class="code_number">5</span>:</li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;<span >a= </span> a + <span class="code_number">1</span></li>
+                <li class="documentation_code_content_item ">... else:</li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;<span >a= </span> a - <span class="code_number">1</span></li>
+
+
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;</li>
+
+                <li class="documentation_code_content_item documentation_code_content_item_input">a</li>
+                <li class="documentation_code_content_item"><span class="code_number">21</span></li>
+              </ul>
+            </div>
+
+            <h3 class="documentation_section_title">Condition elif</h3>
+            <p>Il est possible d'ajouter autant de conditions précises que l'on souhaite en ajoutant le mot clé elif, contraction de "else" et "if", qu'on pourrait traduire par "sinon".</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">a = <span class="code_number">5</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">if a > <span class="code_number">5</span>:</li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;<span >a= </span> a + <span class="code_number">1</span></li>
+                <li class="documentation_code_content_item ">... elif <span>a  ==   5  :</span></li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;<span >a = </span> a + <span class="code_number">1000</span></li>
+
+
+                <li class="documentation_code_content_item ">... <span>else:</span></li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;<span>a = </span> a<span> -</span><span class="code_number"> 1</span></li>
+                <li class="documentation_code_content_item ">... </li>
+
+                <li class="documentation_code_content_item documentation_code_content_item_input">a</li>
+                <li class="documentation_code_content_item"><span class="code_number">1005</span></li>
+              </ul>
+            </div>
+            <p>Dans cet exemple, on a repris le même que les précédent mais nous avons ajouté la conditions "Si la valeur est égale à 5" que se passe-t-il? Et bien on ajoute 1000. </p>
+            <h3 class="documentation_section_title">Les comparaisons possibles</h3>
+            <p>Il est possible de comparer des éléments:</p>
+
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item "> == <span>&nbsp;&nbsp; égal à</span></li>
+                <li class="documentation_code_content_item "> != <span> &nbsp;&nbsp;différent de (fonctionne aussi avec )</span></li>
+                <li class="documentation_code_content_item "> >  <span>&nbsp;&nbsp; strictement supérieur à</span></li>
+                <li class="documentation_code_content_item "> >=  <span> &nbsp;&nbsp;supérieur ou égal à</span></li>
+
+                <li class="documentation_code_content_item "> < <span>&nbsp;&nbsp; strictement inférieur à  </span></li>
+                <li class="documentation_code_content_item "> <=  <span>&nbsp;&nbsp; inférieur ou égal à </span></li>
+
+
+
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="documentation"  id="loops">
+        <h2 class="documentation_title">5.Loops</h2>
+        <div class="documentation_section">
+          <h3 class="documentation_section_title">La boucle while</h3>
+          <p class="documentation_section_content">En anglais "while" signifie "Tant que". Pour créer une <span class="documentation_highlight">boucle</span>, il faut donc utiliser ce mot clé suivi d'une indication qui dit quand la boucle s'arrête.</br>
+            Un exemple sera plus parlant: </br>On désire écrire 100 fois cette phrase:</br>"Je ne dois pas poser une question sans lever la main"</br>Ecrire à la main prend beaucoup de temps et beaucoup de temps x 100 s'est vraiment beaucoup de temps, et peu fiable, même pour les chanceux qui connaissent le copier-coller. Et un bon programmeur est toujours un peu fainéant perfectionniste, il cherchera la manière la plus élégante de ne pas répéter du code.  </p>
+          <div class="documentation_subsection">
+
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">i =<span class='code_number'>0</span> </li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">while i < <span class="code_number">10</span>:</li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;<span >print(</span><span class="code_string">"Je ne dois pas poser une question sans lever la main"</span>)</li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;<span>i =</span> i + <span class="code_number">1</span></li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;</li>
+                <li class="documentation_code_content_item ">Je ne dois pas poser une question sans lever la main</br>
+                  Je ne dois pas poser une question sans lever la main</br>
+                  Je ne dois pas poser une question sans lever la main</br>
+                  Je ne dois pas poser une question sans lever la main</br>
+                  Je ne dois pas poser une question sans lever la main</br>
+                  Je ne dois pas poser une question sans lever la main</br>
+                  Je ne dois pas poser une question sans lever la main</br>
+                  Je ne dois pas poser une question sans lever la main</br>
+                  Je ne dois pas poser une question sans lever la main</br>
+                  Je ne dois pas poser une question sans lever la main</li>
+
+
+
+              </ul>
+            </div>
+
+
+          </div>
+          <div class="documentation_subsection">
+
+            <h3 class="documentation_section_title">La boucle for</h3>
+            <p>La boucle <span class="documentation_highlight">for</span> permet de faire des<span class="documentation_highlight">itérations</span>  sur un élément, comme une chaine de caractères par exemple ou une liste.</br>Exemple:</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">v = <span class="code_string">"Bonjour toi"</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">for lettre in v  :</li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;<span >print  </span> lettre</li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;</li>
+                <li class="documentation_code_content_item">B</br>o</br>n</br>j</br>o</br>u</br>r</br> </br>t</br>o</br>i</li>
+
+              </ul>
+            </div>
+            <h3 class="documentation_section_title">Range</h3>
+
+            <p>Il est possible de créer une boucle facilement avec <span class="docmentation_highlight">range:</span></p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">for i in range(0,5):</li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;print i </li>
+                <li class="documentation_code_content_item ">0</br>1</br> 2</br> 3</br> 4 </li>
+              </ul>
+            </div>
+
+
+            <h3 class="documentation_section_title">Stopper une boucle avec break</h3>
+            <p>Pour stopper immédiatement une boucle on peut utiliser le mot clé <span class="documentation_highlight">break</span> : </p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = [<span class="code_number">1</span>,<span class="code_number">5</span>,<span class="code_number">10</span>,<span class="code_number">15</span>,<span class="code_number">20</span>,<span class="code_number">25</span>]</li>
+
+                <li class="documentation_code_content_item documentation_code_content_item_input "> for i in liste :</li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;<span >if i ></span>  <span class="code_number">15</span>:</li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print <span class="code_string">"On stoppe la boucle"</span></li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break </li>
+                <li class="documentation_code_content_item ">... &nbsp;&nbsp;&nbsp;<span>print i</span></li>
+                <li class="documentation_code_content_item ">...</li>
+
+
+                <li class="documentation_code_content_item " >1<br>5</br>10<br>15</br>On stoppe la boucle</li>
+
+              </ul>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="documentation"  id="collections">
+        <h2 class="documentation_title">6.Collections</h2>
+        <div class="documentation_section">
+          <h3 class="documentation_section_title">Les listes python</h3>
+          <p class="documentation_section_content">Les . <span class="documentation_highlight">listes</span> (ou list / array) en python sont une variable dans laquelle on peut mettre plusieurs variables
+          </p>
+          <h3 class="documentation_section_title">Créer une liste en python</h3>
+          <p>Pour créer une liste, rien de plus simple:</p>
+          <div class="documentation_subsection">
+
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = [] </li>
+              </ul>
+            </div>
+
+
+          </div>
+          <h3 class="documentation_section_title">Ajouter une valeur à une liste python</h3>
+          <p>Vous pouvez ajouter les valeurs que vous voulez lors de la création de la liste python:</p>
+          <div class="documentation_subsection">
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = [<span class="code_number">1</span>,<span class="code_number">2</span>,<span class="code_number">3</span>] </li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste</li>
+                <li class="documentation_code_content_item ">[<span class="code_number">1</span>,<span class="code_number">2</span>,<span class="code_number">3</span>]</li>
+
+
+              </ul>
+            </div>
+
+
+            <p>Ou les ajouter après la création de la liste avec la méthode append (qui signifie "ajouter" en anglais):</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = []</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste </li>
+                <li class="documentation_code_content_item ">[] </li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste.append(<span class="code_number">1</span>) </li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste</li>
+                <li class="documentation_code_content_item ">[<span class="code_number">1</span>] </li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste.append(<span class="code_string">"ok"</span>) </li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste</li>
+                <li class="documentation_code_content_item ">[<span class="code_number">1</span>,<span class="code_string">"ok"</span>] </li>
+              </ul>
+            </div>
+
+
+
+            <p>On voit qu'il est possible de mélanger dans une même liste des variables de type différent. On peut d'ailleurs mettre une liste dans une liste. </p>
+            <h3 class="documentation_section_title">Afficher un item d'une liste</h3>
+            <p>Pour lire une liste, on peut demander à voir l'index de la valeur qui nous intéresse:</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = [<span class="code_string">"a"</span>,<span class="code_string">"d"</span>,<span class="code_string">"m"</span>]</li>
+
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste [<span class="code_number">0</span>]</li>
+                <li class="documentation_code_content_item "><span class="code_string">'a'</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste [<span class="code_number">2</span>]</li>
+                <li class="documentation_code_content_item "><span class="code_string">'m'</span></li>
+              </ul>
+            </div>
+            <p>Le premier item commence toujours avec l'index 0. Pour lire la premier item on utilise la valeur 0, le deuxième on utilise la valeur 1, etc.
+
+              </br>Il est d'ailleurs possible de modifier une valeur avec son index</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = [<span class="code_string">"a"</span>,<span class="code_string">"d"</span>,<span class="code_string">"m"</span>]</li>
+
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste [<span class="code_number">0</span>]</li>
+                <li class="documentation_code_content_item "><span class="code_string">'a'</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste [<span class="code_number">2</span>]</li>
+                <li class="documentation_code_content_item "><span class="code_string">'m'</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste [<span class="code_number">2</span>]= <span class="code_string">"z"</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste </span></li>
+                <li class="documentation_code_content_item  "> [<span class="code_string">"a"</span>,<span class="code_string">"d"</span>,<span class="code_string">"z"</span>] </span></li>
+
+              </ul>
+            </div>
+            <h3 class="documentation_section_title">Supprimer une entrée avec un index</h3>
+            <p>Il est parfois nécessaire de supprimer une entrée de la liste. Pour cela vous pouvez utiliser la fonction del.</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = [<span class="code_string">"a"</span>,<span class="code_string">"b"</span>,<span class="code_string">"c"</span>]</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> del liste [<span class="code_number">1</span>]</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste </span></li>
+                <li class="documentation_code_content_item  "> [<span class="code_string">"a"</span>,<span class="code_string">"c"</span>] </span></li>
+
+              </ul>
+            </div>
+            <h3 class="documentation_section_title">Supprimer une entrée avec sa valeur</h3>
+            <p>Il est possible de supprimer une entrée d'une liste avec sa valeur avec la méthode remove.</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = [<span class="code_string">"a"</span>,<span class="code_string">"b"</span>,<span class="code_string">"c"</span>]</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input ">  liste.remove(<span class="code_string">"a"</span>)</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste </span></li>
+                <li class="documentation_code_content_item  "> [<span class="code_string">"b"</span>,<span class="code_string">"c"</span>] </span></li>
+
+              </ul>
+            </div>
+
+            <h3 class="documentation_section_title">Inverser les valeurs d'une liste</h3>
+            <p>Vous pouvez inverser les items d'une liste avec la méthode reverse.</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = [<span class="code_string">"a"</span>,<span class="code_string">"b"</span>,<span class="code_string">"c"</span>]</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input ">  liste.reverse()</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste </span></li>
+                <li class="documentation_code_content_item  "> [<span class="code_string">"c"</span>,<span class="code_string">"b"</span>,<span class="code_string">"a"</span>] </span></li>
+
+              </ul>
+            </div>
+            <h3 class="documentation_section_title">Compter le nombre d'items d'une liste</h3>
+            <p>Il est possible de compter le nombre d'items d'une liste avec la fonction len.</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = [<span class="code_string">"a"</span>,<span class="code_string">"b"</span>,<span class="code_string">"c"</span>]</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> len(liste)</li>
+                <li class="documentation_code_content_item  "> 3 </span></li>
+              </ul>
+            </div>
+
+            <h3 class="documentation_section_title">Compter le nombre d'occurences d'une valeur</h3>
+            <p>Pour connaitre le nombre d'occurences d'une valeur dans une liste, vous pouvez utiliser la méthode count. </p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = [<span class="code_string">"a"</span>,<span class="code_string">"a"</span>,<span class="code_string">"a"</span>,<span class="code_string">"b"</span>,<span class="code_string">"c"</span>,<span class="code_string">"c"</span>]</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste.count(<span class="code_string">"a"</span>)</li>
+                <li class="documentation_code_content_item  "> 3 </span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste.count(<span class="code_string">"c"</span>)</li>
+                <li class="documentation_code_content_item  "> 2 </span></li>
+              </ul>
+            </div>
+            <h3 class="documentation_section_title">Trouver l'index d'une valeur</h3>
+            <p>La méthode index vous permet de connaitre la position de l'item cherché.</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = [<span class="code_string">"a"</span>,<span class="code_string">"a"</span>,<span class="code_string">"a"</span>,<span class="code_string">"b"</span>,<span class="code_string">"c"</span>,<span class="code_string">"c"</span>]</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste.index(<span class="code_string">"b"</span>)</li>
+                <li class="documentation_code_content_item  "> 3 </span></li>
+
+              </ul>
+            </div>
+
+            <h3 class="documentation_section_title">Manipuler une liste</h3>
+            <p>Voici quelques astuces pour manipuler des listes:</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">liste = [<span class="code_number">1</span>,<span class="code_number">10</span>,<span class="code_number">100</span>,<span class="code_number">250</span>,<span class="code_number">500</span>]</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste[<span class="code_number">0</span>]</li>
+                <li class="documentation_code_content_item  ">1</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste[<span class="code_number">-1</span>] # Cherche la dernière occurence</li>
+                <li class="documentation_code_content_item  ">500</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste[<span class="code_number">-4:</span>] # Affiche les 4 dernières occurrences</li>
+                <li class="documentation_code_content_item  ">[<span class="code_number">500</span>,<span class="code_number">250</span>,<span class="code_number">100</span>,<span class="code_number">10</span>]</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste[<span class="code_number">:</span>] # Affiche toutes les occurences</li>
+                <li class="documentation_code_content_item  ">[<span class="code_number">1</span>,<span class="code_number">10</span>,<span class="code_number">100</span>,<span class="code_number">250</span>,<span class="code_number">500</span>]</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste[<span class="code_number">2:4</span>] = [<span class="code_number">69</span>,<span class="code_number">70</span>]</li>
+                <li class="documentation_code_content_item  ">[<span class="code_number">1</span>,<span class="code_number">10</span>,<span class="code_number">69</span>,<span class="code_number">70</span>,<span class="code_number">500</span>]</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input "> liste[<span class="code_number">:</span>] = []  # vider la liste</li>
+                <li class="documentation_code_content_item  ">[]</li>
+
+              </ul>
+            </div>
+            <h3 class="documentation_section_title">Les tuples python</h3>
+            <p>Un tuple est une liste qui ne peut plus être modifiée.</p>
+            <h3 class="documentation_section_title">Créer un tuple</h3>
+            <p>Pour créer un tuple, vous pouvez utiliser la syntaxe suivante:</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">mon_tuple=()</li>
+              </ul>
+            </div>
+            <h3 class="documentation_section_title">Ajouter une valeur à un tuple</h3>
+            <p>Pour créer un tuple avec des valeurs, vous pouvez le faire de cette façon:</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">mon_tuple=(<span class="code_number">1</span>,<span class="code_string">"ok"</span>,<span class="code_string">"olivier"</span>)</li>
+              </ul>
+            </div>
+            <p>Les parenthèses ne sont pas obligatoires mais facilite la lisibilité du code (rappelons que la force de python est sa simplicité de lecture):</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">mon_tuple=<span class="code_number">1</span>,<span class="code_number"> 2</span>,<span class="code_number"> 3</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_function">type</span>(mon_tuple)</li>
+                <li class="documentation_code_content_item "> < <span class="code_function">type</span>  'tuple'></li>
+
+              </ul>
+            </div>
+            <p>Lorsque vous créez un tuple avec une seule valeur, n'oubliez pas d'y ajouter une virgule, sinon ce n'est pas un tuple.</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">mon_tuple=(<span class="code_number">1</span>,)</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"><span class="code_function">type</span>(mon_tuple)</li>
+                <li class="documentation_code_content_item "> < <span class="code_function">type</span>  'tuple'></li>
+
+              </ul>
+            </div>
+            <h3 class="documentation_section_title">Afficher une valeur d'un tuple</h3>
+            <p>Le tuple est une sorte de liste, on peut donc utiliser la même syntaxe pour lire les données du tuple.</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">mon_tuple=[<span class="code_number">0</span>]</li>
+                <li class="documentation_code_content_item ">1</li>
+              </ul>
+            </div>
+            <p>Et évidemment si on essaie de changer la valeur d'un index, l'interpreteur nous insulte copieusement:</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">mon_tuple=[<span class="code_string">"ok"</span>]</li>
+                <li class="documentation_code_content_item ">Traceback (most recent call last):</br>  File "&lt;stdin&gt;", line 1, in &lt;module&gt;</br>TypeError: 'tuple' object does not support item assignment</li>
+              </ul>
+            </div>
+            <h3 class="documentation_section_title">Les dictionnaires python</h3>
+            <p>Un dictionnaire en python est une sorte de liste mais au lieu d'utiliser des index, on utilise des clés, c'est à dire des valeurs autres que numériques.</p>
+            <h3 class="documentation_section_title">Comment créer un dictionnaire?</h3>
+            <p>Pour initialiser un dictionnaire, on utile la syntaxe suivante:</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">a = { }</li>
+              </ul>
+            </div>
+            <h3 class="documentation_section_title">Comment ajouter des valeurs dans un dictionnaire?</h3>
+            <p>Pour ajouter des valeurs à un dictionnaire il faut indiquer une clé ainsi qu'une valeur:</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">a = { }</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">a [<span class="code_string">"nom"</span>] = <span class="code_string">"engel"</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">a [<span class="code_string">"prenom"</span>] = <span class="code_string">"olivier"</span></li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">a =</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">{<span class="code_string">'nom'</span>:<span class="code_string">'engel'</span>, <span class="code_string">'prenom'</span>:<span class="code_string">'olivier'</span>}</li>
+
+              </ul>
+            </div>
+            <p>Vous pouvez utiliser des clés numériques comme dans la logique des listes.</p>
+            <h3 class="documentation_section_title">Récupérer une valeur dans un dictionnaire </h3>
+            <p>La méthode get vous permet de récupérer une valeur dans un dictionnaire et si la clé est introuvable, vous pouvez donner une valeur à retourner par défaut:</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">data = {<span class="code_string">"name:"</span> <span class="code_string">"Olivier"</span>,<span class="code_string">"age:"</span> <span class="code_number">30</span>}</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">data.get(<span class="code_string">"name"</span>)</li>
+                <li class="documentation_code_content_item ">Olivier</li>
+              </ul>
+            </div>
+            <h3 class="documentation_section_title" >Vérifier la présence d'une clé dans un dictionnaire</h3>
+            <p>Vous pouvez utiliser la méthode haskey pour vérifier la présence d'une clé que vous cherchez:</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">a.has_key(<span class="code_string">"nom"</span>)</li>
+                <li class="documentation_code_content_item "><span class="code_boolean">True</span></li>
+              </ul>
+            </div>
+
+            <h3 class="documentation_section_title" >Supprimer une entrée de dictionnaire</h3>
+            <p>Il est possible de supprimer une entrée en indiquant sa clé, comme pour les listes:</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">del a[<span class="code_string">"nom"</span>]</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"> a</li>
+
+                <li class="documentation_code_content_item "><span class="code_boolean">{<span class="code_string">'prenom':</span><span class="code_string">'olivier'</span> }</li>
+              </ul>
+            </div>
+            <h3 class="documentation_section_title">Récupérer les clés par une boucle</h3>
+            <p>Pour récupérer les clés on utilise la méthode keys</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">fiche = {<span class="code_string">"nom:"</span><span class="code_string">"engel"</span>,<span class="code_string">"prenom":</span><span class="code_string">"olivier"</span>}</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"> for cle in fiche.keys():</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"> ...&nbsp;&nbsp;&nbsp; print valeur</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"> ...</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"> nom</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"> prenom</li>
+              </ul>
+            </div>
+
+            <h3 class="documentation_section_title">Récupérer les valeurs par une boucle</h3>
+            <p>Pour cela on utilise la méthode values</p>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">fiche = {<span class="code_string">"nom:"</span><span class="code_string">"engel"</span>,<span class="code_string">"prenom":</span><span class="code_string">"olivier"</span>}</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"> for cle in fiche.values():</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"> ...&nbsp;&nbsp;&nbsp; print valeur</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"> ...</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"> engel</li>
+                <li class="documentation_code_content_item documentation_code_content_item_input"> olivier</li>
+              </ul>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="documentation"  id="functions">
+        <h2 class="documentation_title">7.Functions</h2>
+        <div class="documentation_section">
+
+          <p class="documentation_section_content">Une fonction (ou function) est une suite d'instructions que l'on peut appeler avec un nom.
+          </p>
+          <h3 class="documentation_section_title">Créer une fonction</h3>
+          <p>Créons une fonction qui nous retournera un âge:</p>
+          <div class="documentation_subsection">
+
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item documentation_code_content_item_input">def indique_mon_age(): </li>
+                <li class="documentation_code_content_item ">...&nbsp;&nbsp;&nbsp;return<span class="code_number"> 30</span> </li>
+                <li class="documentation_code_content_item documentation_code_content_item_input">indique_mon_age() </li>
+                <li class="documentation_code_content_item ">30 </li>
+
+
+              </ul>
+            </div>
+
+
+          </div>
+          <h3 class="documentation_section_title">Les paramètres</h3>
+          <p> Créons une autre fonction: </p>
+          <div class="documentation_code">
+            <ul class="documentation_code_content">
+              <li class="documentation_code_content_item documentation_code_content_item_input">def augmente_moi(a): </li>
+              <li class="documentation_code_content_item ">...&nbsp;&nbsp;&nbsp;return augmente_moi + <span class="code_number">1 </span> </li>
+              <li class="documentation_code_content_item documentation_code_content_item_input">augmente_moi(<span class="code_number">1</span>) </li>
+              <li class="documentation_code_content_item ">3 </li>
+
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="documentation"  id="strings">
+        <h2 class="documentation_title">8.Strings</h2>
+        <div class="documentation_section">
+
+          <p class="documentation_section_content"> Pour une variable dénommée <b>chaine</b>:
+          </p>
+
+          <div class="documentation_subsection">
+            <h3 class="documentation_section_title">Split</h3>
+
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item">chaine.split() renvoie une liste de tous les mots (séparation: l'espace) d'une chaîne-phrase</br>
+                  chaine.split('*') le séparateur peut être une chaîne autre que l'espace</br>
+                  chaine.split(' ',n) on peut limiter le nombre de séparations effectuées (* dans ce cas)</br>
+                  ' '.join(liste) concaténation d'une liste (ou tuple) de chaînes (le séparateur est ici l'espace) </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="documentation_subsection">
+            <h3 class="documentation_section_title">Replace</h3>
+
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item">
+                  chaine.replace(ssch1,ssch2) remplace si elle existe une sous-chaîne par une autre</br>
+                  chaine.replace(ssch1,ssch2,n) idem, en limitant le nombre de remplacement à n </br>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="documentation_subsection">
+            <h3 class="documentation_section_title">Find</h3>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item">
+                  chaine.find(ssch) renvoie la position d'une sous-chaîne dans une chaîne (0 pour la première position, -1 si la sous-chaîne ne s'y trouve pas</br>
+                  chaine.find(ssch,debut) renvoie la première position d'une sous-chaine dans une chaine, en définissant les positions de début</br>
+                  chaine.find(ssch,debut,fin) idem, définissant en plus la position de fin</br>
+                  chaine.rfind(ssch,debut,fin) pareil, mais en commençant par la fin </br>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="documentation_subsection">
+            <h3 class="documentation_section_title">Count</h3>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item">
+
+                  chaine.count(ssch,debut,fin) compte les occurrences de la sous-chaîne dans la chaîne, éventuellement entre deux positions </br>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="documentation_subsection">
+            <h3 class="documentation_section_title">from char to ASCII</h3>
+            <div class="documentation_code">
+              <ul class="documentation_code_content">
+                <li class="documentation_code_content_item">
+
+                  ch='k' </br> print ord(ch)</br>107
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+

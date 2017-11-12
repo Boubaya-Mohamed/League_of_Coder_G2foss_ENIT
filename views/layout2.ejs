@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= typeof title == 'undefined' ? 'League of CODERS' : title %></title>
+
+  <!-- Viewport mobile tag for sensible mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext'
+        rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+
+
+  <!--STYLES-->
+  <link rel="stylesheet" href="/styles/animate.css">
+  <link rel="stylesheet" href="/styles/animations.css">
+  <link rel="stylesheet" href="/styles/app.css">
+  <link rel="stylesheet" href="/styles/flags.css">
+  <link rel="stylesheet" href="/styles/importer.css">
+  <!--STYLES END-->
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header_title">
+    <a href="index.html">
+      <img src="./images/favicon.png" alt="" class="header_title_img">
+      <h1 class="header_title_text">League of <span class="coloredP">CODERS</span></h1>
+    </a>
+  </div>
+  <nav class="header_nav_list hide-sm animated_header">
+    <% if(req.session.authenticated) { %>
+
+    <a class="header_nav_list_item" href="/tasks">Tasks</a>
+    <a class="header_nav_list_item" href="/scoreboard">Scoreboard</a>
+    <a class="header_nav_list_item" href="/doc">Documentation</a>
+    <div class="header_nav_list_item header_nav_list_submenu"><%= req.session.authenticated.name %>&nbsp;&nbsp;<i
+              class="fa fa-caret-down header_nav_list_submenu_icon"></i>
+
+      <div class="header_nav_list_submenus">
+        <a class="header_nav_list_submenus_item header_nav_list_item" href="/team/<%= req.session.authenticated.id%>">Profile</a>
+        <a class="header_nav_list_submenus_item header_nav_list_item" href="/logout">Logout</a>
+      </div>
+    </div>
+    <% } else { %>
+    <a class="header_nav_list_item" href="/tasks">Log In</a>
+    <% } %>
+    <!--
+    <div class="header_nav_list_item header_nav_list_submenu">G2FOSS team&nbsp;&nbsp;<i class="fa fa-caret-down header_nav_list_submenu_icon"></i>
+
+      <div class="header_nav_list_submenus">
+        <a class="header_nav_list_submenus_item header_nav_list_item" href="profile.html">Profile</a>
+        <a class="header_nav_list_submenus_item header_nav_list_item" href="login.html">Logout</a>
+      </div>
+    </div>
+  -->
+  </nav>
+  <nav class="header_nav_list header_nav_mobile hide-md  hide-lg">
+    <a href="#!" id="header_button" class="header_nav_list_item header_nav_mobile_item"><i class="fa fa-bars"></i></a>
+
+  </nav>
+</header>
+
+<div class="index_cover" style="height: 600px;">
+  <div class="index_cover_background">
+
+  </div>
+  <div class="index_cover_image">
+    <div class="index_content">
+            <span class="index_slogan1">
+                <span class="typed"><span class="coloredP">G2FOSS</span></span><span class="typed-cursor">|</span>
+            </span>
+            <span class="index_slogan2">
+                From <span class="">Amateur</span> <span class="fa fa-arrow-right"></span> <span class="coloredG2foss">G2fosser</span> !
+            </span>
+      <a href="/tasks" class="index_action button">Try now</a>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container" id="app">
+  <%- body %>
+</div>
+
+<footer class="footer row">
+  <div class="footer_title l4 m4 s12">
+    <a href="/">
+      <img src="./images/favicon.png" alt="" class="footer_title_img">
+      <h1 class="footer_title_text">League of <span class="coloredP">CODERS</span></h1>
+    </a>
+    <p class="footer_title_copyright">© 2017 <a href="http://www.g2foss.org" target="_blank">G²FOSS ENIT</a></p>
+<p class="footer_title_copyright">Last updated on 6 Sep 2017</p>
+  </div>
+  <nav class="footer_links l4 m4 s12">
+    <span class="footer_link_item footer_link_item_header">Menu</span>
+    <a class="footer_link_item" href="/doc">Documentation</a>
+    <a class="footer_link_item" href="/rules">Rules</a>
+    <a class="footer_link_item" href="/AboutUs">AboutUs</a>
+  </nav>
+  <div class="footer_g2foss l4 m4 s12">
+
+    <a href="http://www.g2foss.org" target="_blank">
+      <img src="./images/g2foss.png" alt="" class="footer_g2foss_img">
+    </a>
+    <h1 class="footer_g2foss_text">Made by <a href="http://www.g2foss.org" target="_blank" class="coloredG2foss">G²FOSS ENIT</a></h1>
+
+
+  </div>
+</footer>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://vuejs.org/js/vue.js"></script>
+
+<!--SCRIPTS-->
+<script src="/js/dependencies/sails.io.js"></script>
+<script src="/js/dependencies/jquery.js"></script>
+<script src="/js/dependencies/manifest.dda7faefc0566b06caef.js"></script>
+<script src="/js/dependencies/vendor.159a830a1c028a40c884.js"></script>
+<script src="/js/app.d48b1666a253b556c520.js"></script>
+<script src="/js/doc.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/jquery.js"></script>
+<script src="/js/stickfooter.js"></script>
+<script src="/js/toast.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/wow.js"></script>
+<!--SCRIPTS END-->
+
+<script src="/app.js"></script>
+<script src="/javascripts/headerIndex.js"></script>
+</body>
+</html>

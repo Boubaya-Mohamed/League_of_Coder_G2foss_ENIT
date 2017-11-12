@@ -1,0 +1,64 @@
+
+  <nav class="navigation">
+    <a href="challenges.html" class="navigation_item">League of Coders</a>
+    <a href="submissions.html" class="navigation_item">Submissions</a>
+  </nav>
+  <h1 class="page_title">
+    League of Coders
+  </h1>
+
+  <div class="sign_in_container challenge_panel">
+    <nav class="challenge_panel_navigation row">
+      <a href="/tasks" class="sign_in_menu_item challenge_panel_navigation_item l4 m6 s12">
+        Tasks
+      </a>
+      <a href="/scoreboard" class="sign_in_menu_item challenge_panel_navigation_item l4 m6 s12">
+        Ranking
+      </a>
+      <a href="/submissions" class="sign_in_menu_item challenge_panel_navigation_item sign_in_menu_item_selected l4 m6 s12">
+        Submissions
+      </a>
+    </nav>
+    <div class="submissions">
+
+
+      <div class="tasks_header">
+        Submissions list
+      </div>
+
+      <% submissions.forEach(function(submission){ %>
+
+      <div class="item tasks_item submission_item">
+                <span class="tasks_item_action">
+                  <i class="<%= (submission.completed) ? 'fa fa-check-circle colored' : 'fa fa-times-circle red' %>"></i>
+                </span>
+                <span class="item_avatar item_avatar_icon item_avatar_icon_system">
+                  <i class="fa fa-wrench"></i>
+                </span>
+        <div class="tasks_item_content submissions_item_content">
+          <h3 class="tasks_item_name truncate">
+            <a href="/tasks/<%= submission.task.id %>"><%= submission.task.title %></a>
+          </h3>
+          <div class="tasks_item_information">
+            <div class="tasks_item_information_item">
+              <i class="fa fa-clock-o"></i> <%= moment(submission.createdAt).fromNow() %>
+            </div>
+            <div class="tasks_item_information_item colored">
+              <i class="fa fa-trophy"></i> <%= submission.points %> pts
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <% }) %>
+
+      <% if(submissions.length == 0){ %>
+
+      <div class="item tasks_item item_empty">
+          No entries were found.
+      </div>
+
+      <% } %>
+
+    </div>
+  </div>

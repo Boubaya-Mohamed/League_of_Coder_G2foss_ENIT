@@ -1,0 +1,1 @@
+print ' '.join(map(lambda x : str(int(x)*int(x)), raw_input().split()))

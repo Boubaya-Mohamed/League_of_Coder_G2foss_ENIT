@@ -1,0 +1,29 @@
+<% if (typeof errors == 'string' && errors) { %>
+<h2>
+  <%= errors %>
+</h2>
+<% } %>
+
+
+
+  <div class="sign_in_container">
+    <div class="sign_in_header">
+      <h1>Welcome Back!</h1>
+    </div>
+    <form action="/login" method="post" class="sign_in_form">
+      <p class="sign_in_form_item">
+        <!--
+        <label for="" class="sign_in_form_item_label">Team Name</label>
+        -->
+        <input name="name" type="text" class="sign_in_form_item_input input" placeholder="Team Name" required="required">
+      </p>
+      <p class="sign_in_form_item">
+        <!--
+        <label for="" class="sign_in_form_item_label">Password</label>
+        -->
+        <input name="password" type="password" class="sign_in_form_item_input input" placeholder="Password" required="required">
+      </p>
+      <input type="submit" value="Sign In" class="button button-sm sign_in_action">
+    </form>
+  </div>
+  <div class="toast_container"></div>

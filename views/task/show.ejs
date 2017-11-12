@@ -1,0 +1,10 @@
+ <nav class="navigation">
+    <a href="/tasks" class="navigation_item">League of Coders</a>
+    <a href="/tasks/<%= task.id %>" class="navigation_item"><%= task.title %></a>
+  </nav>
+  <h1 class="page_title">
+    <a href="/tasks" class="page_title_return"><i class="fa fa-arrow-left"></i></a>
+    <%= task.title %>
+  </h1>
+
+ <task :task="<%= JSON.stringify(task) %>"></task>

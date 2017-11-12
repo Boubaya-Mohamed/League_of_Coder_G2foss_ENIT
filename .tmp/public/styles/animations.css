@@ -1,0 +1,56 @@
+.fade-move {
+    transition: transform 2s;
+}
+.fade-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: all 0.3s;
+}
+.fade-enter, .fade-leave-active {
+    opacity: 0;
+}
+
+.challenge_description *{
+    margin: inherit;
+    padding: inherit;
+    list-style: inherit;
+}
+
+.challenge_description ul{
+    margin-left: 20px;
+}
+.challenge_description strong{
+    font-weight:bold;
+}
+.challenge_description i{
+    font-style: italic;
+}
+.challenge_description img{
+    max-width: 100%;
+}
+
+.task_actions_results{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.task_actions_results_item{
+    flex: 30% 1;
+    font-family:"Titillium Web", "roboto";
+    font-style: 12px;
+    font-weight:bold;
+    padding: 20px;
+}
+
+.containerLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index_cover {
+    min-height: 100vh;
+}

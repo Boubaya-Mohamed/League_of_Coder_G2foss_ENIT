@@ -1,0 +1,80 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+<div id="wrapper">
+  <nav class="navigation">
+    <a href="challenges.html" class="navigation_item">League of Coders</a>
+    <a href="ranking.html" class="navigation_item">Ranking</a>
+  </nav>
+  <h1 class="page_title">
+    League of Coders
+  </h1>
+
+
+ <div id="columnchart_values"></div>
+<script type="text/javascript">
+var initData = <%-JSON.stringify(teams)%>;
+
+</script>
+<script type="text/javascript">
+console.log(initData) ;
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Element", "Score", { role: "style" } ],
+        [initData[0].name, initData[0].score,  "gold"],
+        [initData[1].name, initData[1].score, "silver"],
+              [initData[2].name, initData[2].score, "#c62828" ],
+              [initData[3].name, initData[3].score, "#6a1b9a"],
+              [initData[4].name, initData[4].score, "#512da8 "],
+              [initData[5].name, initData[5].score, "#3f51b5"],
+               [initData[6].name, initData[6].score, "#2196f3"],
+               [initData[7].name, initData[7].score, "#00838f"],
+               [initData[8].name, initData[8].score, "#f57c00"],
+
+
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        title: "Ranking",
+        width: "100%",
+        height: 500,
+        bar: {groupWidth: "80%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+  <script>
+
+</script>
+
+<br>
+  <div class="sign_in_container challenge_panel">
+    <nav class="challenge_panel_navigation row">
+      <a href="/tasks" class="sign_in_menu_item challenge_panel_navigation_item l4 m6 s12">
+        Tasks
+      </a>
+      <a href="/scoreboard" class="sign_in_menu_item challenge_panel_navigation_item sign_in_menu_item_selected l4 m6 s12">
+        Ranking
+      </a>
+      <a href="/submissions" class="sign_in_menu_item challenge_panel_navigation_item l4 m6 s12">
+        Submissions
+      </a>
+    </nav>
+<scoreboard>
+</scoreboard>
+</div>
+</div>
+
+
